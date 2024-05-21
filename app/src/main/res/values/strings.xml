@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Project_Travel_1</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hint_login">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="register_button">Зарегестрироваться</string>
+    <string name="log_in_button">Войти</string>
+    <string name="continue_1">Продолжить</string>
+    <string name="yet_auth">Вы уже вошли!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

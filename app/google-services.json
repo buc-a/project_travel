@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "375111895271",
+    "firebase_url": "https://basedateuser-ef7aa-default-rtdb.firebaseio.com",
+    "project_id": "basedateuser-ef7aa",
+    "storage_bucket": "basedateuser-ef7aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375111895271:android:2993ef0d5e8fcaae50ba42",
+        "android_client_info": {
+          "package_name": "com.example.project_travel_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7xY41qeYIelvlksFkU8dvWr55YYywm6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

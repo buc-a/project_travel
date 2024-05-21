@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/memoryFragment"
+        android:name="com.example.project_travel_1.fragments.MemoryFragment"
+        android:label="fragment_memory"
+        tools:layout="@layout/fragment_memory" >
+
+        <action
+            android:id="@+id/action_memoryFragment_to_seeMemoryFragment"
+            app:destination="@id/seeMemoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.project_travel_1.fragments.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_listTicketsFragment"
+            app:destination="@id/listTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.project_travel_1.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_seeMemoryFragment"
+            app:destination="@id/seeMemoryFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myNodesFragment"
+            app:destination="@id/myNodesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeMemoryFragment"
+        android:name="com.example.project_travel_1.fragments.SeeMemoryFragment"
+        android:label="fragment_see_memory"
+        tools:layout="@layout/fragment_see_memory" >
+        <action
+            android:id="@+id/action_seeMemoryFragment_to_itemMemoryFullFragment2"
+            app:destination="@id/itemMemoryFullFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemMemoryFullFragment2"
+        android:name="com.example.project_travel_1.fragments.ItemMemoryFullFragment"
+        android:label="ItemMemoryFullFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/listTicketsFragment"
+        android:name="com.example.project_travel_1.fragments.ListTicketsFragment"
+        android:label="fragment_list_tickets"
+        tools:layout="@layout/fragment_list_tickets">
+
+        <action
+            android:id="@+id/action_listTicketsFragment_to_attractionsFragment"
+            app:destination="@id/attractionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attractionsFragment"
+        android:name="com.example.project_travel_1.fragments.AttractionsFragment"
+        android:label="fragment_attractions"
+        tools:layout="@layout/fragment_attractions">
+
+        <action
+            android:id="@+id/action_attractionsFragment_to_toDoFragment"
+            app:destination="@id/toDoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toDoFragment"
+        android:name="com.example.project_travel_1.fragments.ToDoFragment"
+        android:label="fragment_to_do"
+        tools:layout="@layout/fragment_to_do" >
+        <action
+            android:id="@+id/action_toDoFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myNodesFragment"
+        android:name="com.example.project_travel_1.fragments.MyNodesFragment"
+        android:label="fragment_my_nodes"
+        tools:layout="@layout/fragment_my_nodes" >
+        <action
+            android:id="@+id/action_myNodesFragment_to_nodeFragment"
+            app:destination="@id/nodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nodeFragment"
+        android:name="com.example.project_travel_1.fragments.NodeFragment"
+        android:label="fragment_node"
+        tools:layout="@layout/fragment_node" />
+
+
+</navigation>

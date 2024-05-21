@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NodeFragment">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/city_to_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Город - город"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:id="@+id/data_to_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дата - дата"
+            android:textSize="20dp"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/purple_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ДОСТОПРИМЕЧАТЕЛЬНОСТИ">
+
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/my_attractions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Достопримечательности">
+        </TextView>
+
+        <TextView
+            android:background="@color/purple_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="БИЛЕТ"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:ems="4"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple_android"
+                    android:id="@+id/tv_price_1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_duration_to_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_duration_back_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+
+                    android:ems="7"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_departure_at_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_return_at_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/purple_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="СПИСОК ДЕЛ"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_view_to_do">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

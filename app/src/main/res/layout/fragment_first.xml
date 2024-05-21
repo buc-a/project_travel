@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FirstFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:hint="Откуда"
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20">
+
+    </EditText>
+
+    <EditText
+        android:hint="Куда"
+        android:id="@+id/tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20">
+
+    </EditText>
+    <EditText
+        android:hint="Дата отправления (ГГГГ-ММ-ДД)"
+        android:id="@+id/et_depart_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </EditText>
+    <EditText
+        android:hint="Дата возвращения (ГГГГ-ММ-ДД)"
+        android:id="@+id/et_return_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Найти билет"
+        android:id="@+id/btn_find_ticket">
+
+    </Button>
+
+
+
+</LinearLayout>

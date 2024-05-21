@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="785dp"
+    android:padding="20dp"
+    tools:context=".fragments.MemoryFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223"
+            tools:layout_editor_absoluteX="-16dp">
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/new_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/add_photo">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/et_place"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            </EditText>
+            <Button
+                android:onClick="toSeeMemory"
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Добавить воспоминание"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.731">
+
+            </Button>
+            <Button
+                android:id="@+id/btn_see"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Посмотреть существующее"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_add">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</FrameLayout>
